@@ -1,0 +1,19 @@
+"-p" 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\stm8\config\ddf\iostm8s003f3.ddf" 
+
+"--mcuname" 
+
+"STM8S003F3" 
+
+"--verify_download" 
+
+"--option_bytes_file" 
+
+"D:\(220313)\10. workspace\01. C_C++\11. test\git_upload\cm300_v1.0_0413_cozmos\ob.obc" 
+
+"--erase_memory" 
+
+
+
+

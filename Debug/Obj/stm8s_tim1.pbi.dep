@@ -1,0 +1,13 @@
+stm8s_tim1.pbi: \
+  D:\(220313)\10.\ workspace\01.\ C_C++\11.\ test\git_upload\cm300_v1.0_0413_cozmos\src\stm8s_tim1.c \
+  D:\(220313)\10.\ workspace\01.\ C_C++\11.\ test\git_upload\cm300_v1.0_0413_cozmos\inc\stm8s_tim1.h \
+  D:\(220313)\10.\ workspace\01.\ C_C++\11.\ test\git_upload\cm300_v1.0_0413_cozmos\inc/stm8s.h \
+  D:\(220313)\10.\ workspace\01.\ C_C++\11.\ test\git_upload\cm300_v1.0_0413_cozmos\inc/stm8s_conf.h \
+  D:\(220313)\10.\ workspace\01.\ C_C++\11.\ test\git_upload\cm300_v1.0_0413_cozmos\inc/stm8s_adc1.h \
+  D:\(220313)\10.\ workspace\01.\ C_C++\11.\ test\git_upload\cm300_v1.0_0413_cozmos\inc/stm8s_clk.h \
+  D:\(220313)\10.\ workspace\01.\ C_C++\11.\ test\git_upload\cm300_v1.0_0413_cozmos\inc/stm8s_flash.h \
+  D:\(220313)\10.\ workspace\01.\ C_C++\11.\ test\git_upload\cm300_v1.0_0413_cozmos\inc/stm8s_gpio.h \
+  D:\(220313)\10.\ workspace\01.\ C_C++\11.\ test\git_upload\cm300_v1.0_0413_cozmos\inc/stm8s_tim1.h \
+  D:\(220313)\10.\ workspace\01.\ C_C++\11.\ test\git_upload\cm300_v1.0_0413_cozmos\inc/stm8s_tim2.h \
+  D:\(220313)\10.\ workspace\01.\ C_C++\11.\ test\git_upload\cm300_v1.0_0413_cozmos\inc/stm8s_tim4.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\intrinsics.h
