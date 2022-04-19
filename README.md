@@ -34,6 +34,7 @@ Power_Off - 버튼을 1초 동안 누르면 LED/Motor 기능 Off
 ### 2.1 POWER_ON
 > #### 버튼 1초 long_Press -> Func_01 동작
 >  
+> <동작 순서>
 > - ps_hold_on (상시온)
 > - beep음 - 도미솔  
 > - 1초 delay  
@@ -64,6 +65,7 @@ case POWER_ON_WAIT:
 ### 2.2 POWER_FUNC
 > #### 버튼 short_Press -> Func_02 동작 (1번 누를때마다 FuncState+1)  
 >  
+> <동작 순서>
 > - beep음 - 도레미파솔라시도  
 > - motor_On (duty:도-42, 레-46, 미-50, 파-54, 솔-58, 라-62, 시-66, 도-70)  
 > - LED 두차례 blink(beep음 동작 후 LED동작)  
@@ -116,6 +118,7 @@ case POWER_FUNC:
 ### 2.3 POWER_LOW_BATT
 > #### POWER_ON_WAIT상태에서 BATT_LOW일 경우 해당 case로 넘어옴   
 >  
+> <동작 순서>
 > - beep음 - 도(3차례 반복)  
 > - motor_On (duty:FLASH에 저장되어있는 값)  
 > - LED 3차례 blink)  
@@ -136,6 +139,7 @@ break;
 ### 2.4 POWER_OFF_WAIT
 > #### POWER_FUNC 상태에서 LONG_PRESS(1초)일 경우 해당 case로 넘어옴   
 >  
+> <동작 순서>
 > - beep음 - 솔파미레도  
 > - POWER_OFF로 넘어감
 
@@ -150,6 +154,7 @@ break;
 ### 2.5 POWER_OFF
 > #### 1. POWER_FUNC 상태에서 LONG_PRESS(1초)일 경우 / 2. BATT_LOW일 경우 해당 case로 넘어옴   
 >  
+> <동작 순서>
 > - motor_Off
 > - led_Off
 > - ps_hold_Off
