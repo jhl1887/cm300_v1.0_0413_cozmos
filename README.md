@@ -112,6 +112,8 @@ case POWER_FUNC:
                         beep_one(1);
                         //beep_bd();
                     break;
+                        
+                        (case 03~10 생략)
 ```
 
 
@@ -121,7 +123,7 @@ case POWER_FUNC:
 > <동작 순서>
 > - beep음 - 도(3차례 반복)  
 > - motor_On (duty:FLASH에 저장되어있는 값)  
-> - LED 3차례 blink)  
+> - LED 3차례 blink  
 > - 0.5초 delay 이후 POWER_OFF로 넘어감
 
 ``` C
@@ -153,8 +155,9 @@ break;
 
 ### 2.5 POWER_OFF
 > #### 1. POWER_FUNC 상태에서 LONG_PRESS(1초)일 경우 / 2. BATT_LOW일 경우 해당 case로 넘어옴   
->  
+>
 > <동작 순서>
+>
 > - motor_Off
 > - led_Off
 > - ps_hold_Off
