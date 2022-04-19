@@ -29,7 +29,7 @@ Power_Off - 버튼을 1초 동안 누르면 LED/Motor 기능 Off
 
 ***
 
-## 2 제품 동작 시나리오 
+## 2. 제품 동작 시나리오 
 
 ### 2.1 POWER_ON
 > #### 버튼 1초 long_Press -> Func_01 동작
@@ -180,7 +180,15 @@ if(gTimeTick - workTime > POWER_ON_TIME) {
 ### 3.3 Removed
 (없음)
 
+***
+
 ## 4. 신뢰성테스트
+```
+* 제품 사용 중 상태 확인을 위한 신뢰성테스트
+* Test 종류 - Button Press Test / 충전 중 발열 상태 확인
+* Button Press Test 소요시간 - 매일 20~30분 / 7일간
+* Test 종료 후 이상유무 확인 -> 공유
+```
 
 ### 4.1 Button Press Test
 #### 4.1.1 Press 강도에 따른 Test (성인 남자 기준)
@@ -198,6 +206,8 @@ if(gTimeTick - workTime > POWER_ON_TIME) {
 * Button Press 20번 반복 × 2set
 
 ### 4.2 충전 중 발열 Test (시간별 발열 상태 확인)
+* 30분 charging
+* 1시간 charging
 * 5시간 charging
 * 10시간 charging
 * 24시간 charging
