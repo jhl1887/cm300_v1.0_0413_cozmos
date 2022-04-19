@@ -5,7 +5,8 @@
 *** 3. Editer : JHLee           ***
 ***********************************
 -->
-# E-Soap_V2.0 Release Note
+
+# cm300_v1.0_0413 Release Note
 ## 1. 전동클렌저 P/G 개요
 ### 1.1 릴리즈 목적
 * cozmos 내부적으로 기능 점검 및 변경 위함.
@@ -178,4 +179,26 @@ if(gTimeTick - workTime > POWER_ON_TIME) {
 
 ### 3.3 Removed
 (없음)
+
+## 4. 신뢰성테스트
+
+### 4.1 Button Press Test
+#### 4.1.1 Press 강도에 따른 Test (성인 남자 기준)
+* Button Press 강도 약하게 × 5회 × 2set
+* Button Press 강도 강하게 × 5회 × 2set
+
+#### 4.1.2 Press 반복에 따른 Test
+* Button Press 5번 반복 × 2set
+* Button Press 10번 반복 × 2set
+* Button Press 20번 반복 × 2set
+
+#### 4.1.3 침수상태 동작 Test (수심 100mm)
+* Button Press 5번 반복 × 2set
+* Button Press 10번 반복 × 2set
+* Button Press 20번 반복 × 2set
+
+### 4.2 충전 중 발열 Test (시간별 발열 상태 확인)
+* 5시간 charging
+* 10시간 charging
+* 24시간 charging
 
