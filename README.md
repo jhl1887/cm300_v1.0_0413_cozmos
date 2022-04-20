@@ -175,7 +175,7 @@ break;
 
 ### 3.1 Added
 
-* Power_On 이후 delay_time 추가
+* Power_On_sound 이후 delay_time 추가
 ``` C
 if(gTimeTick - workTime > POWER_ON_TIME) {  
     ps_hold_cmd(OUTPUT_ON);	// ps_hold on  
