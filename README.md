@@ -171,7 +171,7 @@ break;
 
 ***
 
-## 3. 수정사항(v2.0)
+## 3. 수정사항
 
 ### 3.1 Added
 
@@ -179,11 +179,19 @@ break;
 ``` C
 if(gTimeTick - workTime > POWER_ON_TIME) {  
     ps_hold_cmd(OUTPUT_ON);	// ps_hold on  
+    // beep_cdefg();  
     beep_ceg();	// power on beep  
     delay(3000);  
 ```
 ### 3.2 Changed
-(없음)
+* Power_On_sound changed
+```
+if(gTimeTick - workTime > POWER_ON_TIME) {  
+    ps_hold_cmd(OUTPUT_ON);	// ps_hold on  
+    // beep_cdefg();  <- 기존sound (도레미파솔)
+    beep_ceg();	// power on beep  
+    delay(3000);  
+```
 
 ### 3.3 Removed
 (없음)
