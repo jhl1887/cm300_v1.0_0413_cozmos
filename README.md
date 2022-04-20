@@ -185,11 +185,11 @@ if(gTimeTick - workTime > POWER_ON_TIME) {
 ```
 ### 3.2 Changed
 * Power_On_sound changed
-```
+``` C
 if(gTimeTick - workTime > POWER_ON_TIME) {  
     ps_hold_cmd(OUTPUT_ON);	// ps_hold on  
     // beep_cdefg();  <- 기존sound (도레미파솔)
-    beep_ceg();	// power on beep  
+    beep_ceg();	// power on beep  <- 변경된sound (도미솔)
     delay(3000);  
 ```
 
