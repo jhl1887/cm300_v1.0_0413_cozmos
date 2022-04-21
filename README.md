@@ -5,9 +5,7 @@
 *** 3. Editer : JHLee           ***
 ***********************************
 -->
-| Column 1 | Column 2 | Column 3 | Column 4 |
-| -------- | :------: | -------- | -------- |
-| No span  | Span across three columns    |||
+
 # cm300_v1.0_0413 Release Note
 ## 1. 전동클렌저 P/G 개요
 ### 1.1 릴리즈 목적
