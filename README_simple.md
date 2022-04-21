@@ -1,17 +1,17 @@
 <!--
 ***********************************
 *** 1. Company : cozmos         ***
-*** 2. Edit_date : 2022-04-18   ***
+*** 2. Edit_date : 2022-04-21   ***
 *** 3. Editer : JHLee           ***
 ***********************************
 -->
 
 
-# CM300_Release Note_22.04.21
+# CM300_Release_Note
 
 ***
 
-* ## cm300_v1.0_0413
+* ## version_check
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
