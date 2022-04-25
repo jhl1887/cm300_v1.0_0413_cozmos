@@ -479,15 +479,15 @@
                 <option>
                     <name>OOCOutputFormat</name>
                     <version>2</version>
-                    <state>1</state>
-                </option>
-                <option>
-                    <name>OCOutputOverride</name>
                     <state>0</state>
                 </option>
                 <option>
+                    <name>OCOutputOverride</name>
+                    <state>1</state>
+                </option>
+                <option>
                     <name>OOCOutputFile</name>
-                    <state>cm300_v1.0_0413_cozmos.hex</state>
+                    <state>cm300_v1.0_0413_cozmos.s19</state>
                 </option>
                 <option>
                     <name>OOCCommandLineProducer</name>
@@ -804,11 +804,11 @@
                 </option>
                 <option>
                     <name>IarchiveOverride</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>IarchiveOutput</name>
-                    <state>###Unitialized###</state>
+                    <state>D:\(220313)\10. workspace\01. C_C++\11. test\git_upload\cm300_v1.0_0413_cozmos\Debug\Exe\cm300_v1.0_0413_cozmos.a</state>
                 </option>
             </data>
         </settings>
