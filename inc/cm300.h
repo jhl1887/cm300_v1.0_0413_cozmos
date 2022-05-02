@@ -3,13 +3,14 @@
 
 #include "stm8s.h"
 
-#define POWER_ON_TIME						500			// 500=0.5sec
-#define LONG_PRESS_TIME					1000		// 1000=1sec
+#define POWER_ON_TIME						300			// 500=0.5sec
+#define POWER_ON_DELAY_TIME				3000	// 1000=1sec
+#define LONG_PRESS_TIME					500		// 1000=1sec
 
 #define LOW_BATT_LEVEL					550			// 570(3.8V), 555(3.75V)
 #define MASSAGE_TIME1						100			// 100=0.1sec
 #define MASSAGE_TIME2						30			// 30=0.03sec
-#define WORK_END_TIME						300000	// 300000=5min 30000=30sec
+#define WORK_END_TIME						90000	// 300000=5min 30000=30sec
 #define LED_BLINK_TIME					500			// 500=0.5sec
 
 
@@ -65,6 +66,7 @@ void beep_gfedc(void);
 void beep_one(u8 idx);
 void beep_low_batt(void);
 void beep_ceg(void);
+void beep_cegc(void);
 void beep_gec(void);
 void beep_edc(void);
 

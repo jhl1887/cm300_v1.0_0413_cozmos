@@ -39,7 +39,8 @@ main()
 			case POWER_ON_WAIT:
 				if(gTimeTick - workTime > POWER_ON_TIME) {
 					ps_hold_cmd(OUTPUT_ON);	// ps_hold on
-					beep_ceg();	// power on beep
+					// beep_ceg();	// power on beep
+					beep_cegc();
 					delay(3000);
 					//beep_bdg();
 					if(get_batt_level() < LOW_BATT_LEVEL) {
@@ -60,55 +61,64 @@ main()
 							break;
 							
 							case FUNC_01:
-								motor_enable_duty(42);
 								beep_one(0);
+								delay(3000);
+								motor_enable_duty(42);
 								//beep_bd();
 							break;
 							
 							case FUNC_02:
-								motor_enable_duty(46);
 								beep_one(1);
+								delay(3000);
+								motor_enable_duty(46);
 								//beep_bd();
 							break;
 							
 							case FUNC_03:
-								motor_enable_duty(50);
 								beep_one(2);
+								delay(3000);
+								motor_enable_duty(50);
 								//beep_bd();
 							break;
 							
 							case FUNC_04:
-								motor_enable_duty(54);
 								beep_one(3);
+								delay(3000);
+								motor_enable_duty(54);
 								//beep_bd();
 							break;
 							
 							case FUNC_05:
-								motor_enable_duty(58);
 								beep_one(4);
+								delay(3000);
+								motor_enable_duty(58);
 								//beep_bd();
 							break;
 							
 							case FUNC_06:
-								motor_enable_duty(62);
 								beep_one(5);
+								delay(3000);
+								motor_enable_duty(62);
 								//beep_bd();
 							break;
 							
 							case FUNC_07:
-								motor_enable_duty(66);
 								beep_one(6);
+								delay(3000);
+								motor_enable_duty(66);
 								//beep_bd();
 							break;
 							
 							case FUNC_08:
-								motor_enable_duty(70);
 								beep_one(7);
+								delay(3000);
+								motor_enable_duty(70);
 								//beep_bd();
 							break;
 							
 							case FUNC_09:
 								beep_ceg();
+								delay(3000);
 								//beep_bcd();
 								idx1 = 0;
 								motor_enable_duty(massage1_duty[idx1]);
@@ -117,6 +127,7 @@ main()
 							
 							case FUNC_10:
 								beep_gec();
+								delay(3000);
 								//beep_bcd();
 								idx2 = 0;
 								motor_enable_duty(massage2_duty[idx2]);
@@ -140,11 +151,13 @@ main()
 						buttonTimer = gTimeTick;
 					}
 					if ((gTimeTick - buttonTimer > LONG_PRESS_TIME) && (longPressActive == FALSE)) {
-						longPressActive = TRUE;
-						gPowerState = POWER_OFF_WAIT;
-						gFuncState = FUNC_IDLE;
-						led_ind_cmd(OUTPUT_OFF);
-						TIM1_CtrlPWMOutputs(DISABLE);
+						if (gTimeTick > POWER_ON_DELAY_TIME){
+							longPressActive = TRUE;
+							gPowerState = POWER_OFF_WAIT;
+							gFuncState = FUNC_IDLE;
+							led_ind_cmd(OUTPUT_OFF);
+							TIM1_CtrlPWMOutputs(DISABLE);
+						}
 					}
 				} else {
 					if (buttonActive == TRUE) {
@@ -164,55 +177,64 @@ main()
 								break;
 								
 								case FUNC_01:
-									motor_enable_duty(42);
 									beep_one(0);
+									delay(3000);
+									motor_enable_duty(42);
 									//beep_bd();
 								break;
 								
 								case FUNC_02:
-									motor_enable_duty(46);
 									beep_one(1);
+									delay(3000);
+									motor_enable_duty(46);
 									//beep_bd();
 								break;
 								
 								case FUNC_03:
-									motor_enable_duty(50);
 									beep_one(2);
+									delay(3000);
+									motor_enable_duty(50);
 									//beep_bd();
 								break;
 								
 								case FUNC_04:
-									motor_enable_duty(54);
 									beep_one(3);
+									delay(3000);
+									motor_enable_duty(54);
 									//beep_bd();
 								break;
 								
 								case FUNC_05:
-									motor_enable_duty(58);
 									beep_one(4);
+									delay(3000);
+									motor_enable_duty(58);
 									//beep_bd();
 								break;
 								
 								case FUNC_06:
-									motor_enable_duty(62);
 									beep_one(5);
+									delay(3000);
+									motor_enable_duty(62);
 									//beep_bd();
 								break;
 								
 								case FUNC_07:
-									motor_enable_duty(66);
 									beep_one(6);
+									delay(3000);
+									motor_enable_duty(66);
 									//beep_bd();
 								break;
 								
 								case FUNC_08:
-									motor_enable_duty(70);
 									beep_one(7);
+									delay(3000);
+									motor_enable_duty(70);
 									//beep_bd();
 								break;
 								
 								case FUNC_09:
 									beep_ceg();
+									delay(3000);
 									//beep_bcd();
 									idx1 = 0;
 									motor_enable_duty(massage1_duty[idx1]);
@@ -220,6 +242,7 @@ main()
 								break;
 								
 								case FUNC_10:
+									delay(3000);
 									beep_gec();
 									//beep_bcd();
 									idx2 = 0;

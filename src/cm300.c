@@ -216,6 +216,20 @@ void beep_ceg(void)
 	beep_stop();
 }
 
+void beep_cegc(void)
+{
+	u8 i = 0;
+
+	for(i=0; i < 5; i=i+2) {
+		beep_play_freq(freq[i]);
+		delay(duration[i]);
+	}
+	beep_play_freq(2093);
+	delay(2000);
+	beep_stop();
+}
+
+
 void beep_gec(void)
 {
 	s8 i = 0;
